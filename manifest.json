@@ -1,6 +1,6 @@
 {
-  "short_name": "YJY Portfolio",
-  "name": "윤재영 | 클라우드 엔지니어 포트폴리오",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#2c6fbb",
+  "theme_color": "#000000",
   "background_color": "#ffffff"
 }
