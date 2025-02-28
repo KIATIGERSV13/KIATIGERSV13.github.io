@@ -94,5 +94,17 @@ export const skillLogos = {
   'Google Cloud': {
     logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg',
     url: 'https://cloud.google.com/'
+  },
+  'JavaScript': {
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+    url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
+  },
+  'Python': {
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
+    url: 'https://www.python.org/'
+  },
+  'C': {
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg',
+    url: 'https://www.iso.org/standard/74528.html'
   }
 };

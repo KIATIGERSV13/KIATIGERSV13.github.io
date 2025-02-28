@@ -1,21 +1,22 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useMemo } from 'react';
 import { Box, Typography, Chip, Grid, Paper, Tooltip } from '@mui/material';
 
 function SkillSection({ skillLogos }) {
   // 카테고리 참조 객체 생성
   const categoryRefs = useRef({});
   
-  const skillGroups = {
+  const skillGroups = useMemo(() => ({
     '운영체제': ['Rocky Linux', 'Ubuntu', 'Windows Server', 'Shell Script'],
     '컨테이너 및 오케스트레이션': ['Docker', 'Kubernetes'],
-    '클라우드': ['AWS', 'Google Cloud'],  // Google Cloud 추가
+    '클라우드': ['AWS', 'Google Cloud'],  
     '네트워크': ['Cisco'],
     '개발도구': ['Github', 'Git'],
-    '프론트엔드': ['HTML', 'CSS', 'react'],  // CSS 추가
+    '프로그래밍 언어': ['JavaScript', 'Python', 'C'],  // 새로운 그룹 추가
+    '프론트엔드': ['HTML', 'CSS', 'react'],  
     '데이터베이스': ['MySQL', 'MariaDB'],
     '가상화': ['VMware', 'VirtualBox'],
     '임베디드': ['Arduino', 'Raspberry Pi'],
-  };
+  }), []);
 
   // 기술별 중요도
   const importance = {
@@ -25,7 +26,7 @@ function SkillSection({ skillLogos }) {
     'Docker': 5,
     'Kubernetes': 5,
     'AWS': 5,
-    'Google Cloud': 3,  // Google Cloud 중요도 추가
+    'Google Cloud': 3,  
     'Cisco': 4,
     'Github': 3,
     'Git': 4,
@@ -36,9 +37,12 @@ function SkillSection({ skillLogos }) {
     'react': 3,
     'Raspberry Pi': 3,
     'HTML': 4,
-    'CSS': 4,  // CSS 중요도 추가
+    'CSS': 4,  
     'Shell Script': 4,
     'MariaDB': 3,
+    'JavaScript': 4,  // 추가
+    'Python': 4,      // 추가
+    'C': 3,           // 추가
   };
 
   // 그룹별 색상
@@ -48,6 +52,7 @@ function SkillSection({ skillLogos }) {
     '클라우드': '#9b59b6',
     '네트워크': '#e74c3c',
     '개발도구': '#f39c12',
+    '프로그래밍 언어': '#27ae60',  // 새 카테고리 색상 추가
     '프론트엔드': '#e67e22',
     '데이터베이스': '#1abc9c',
     '가상화': '#34495e',

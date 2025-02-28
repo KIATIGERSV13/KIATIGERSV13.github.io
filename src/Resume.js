@@ -2,13 +2,9 @@ import React, { useState } from 'react';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardHeader from '@mui/material/CardHeader';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
 import Chip from '@mui/material/Chip';
 import ProjectDetail from './components/ProjectDetail';
 import SkillSection from './components/SkillSection';
@@ -328,7 +324,7 @@ function Resume() {
                   gap: 1,
                   justifyContent: { xs: 'center', sm: 'flex-start' } 
                 }}>
-                  {['Linux', 'Windows Server', 'Docker', 'Kubernetes', 'AWS', 'VMware'].map((keyword) => (
+                  {['Linux', 'Windows Server', 'Docker', 'Kubernetes', 'AWS', 'VMware', 'JavaScript', 'Python'].map((keyword) => (
                     <Chip 
                       key={keyword}
                       label={keyword}
