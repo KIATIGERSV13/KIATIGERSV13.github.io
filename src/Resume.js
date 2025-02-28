@@ -328,7 +328,7 @@ function Resume() {
                   gap: 1,
                   justifyContent: { xs: 'center', sm: 'flex-start' } 
                 }}>
-                  {['Linux', 'Windows Server', 'Docker', 'Kubernetes', 'AWS'].map((keyword) => (
+                  {['Linux', 'Windows Server', 'Docker', 'Kubernetes', 'AWS', 'VMware'].map((keyword) => (
                     <Chip 
                       key={keyword}
                       label={keyword}

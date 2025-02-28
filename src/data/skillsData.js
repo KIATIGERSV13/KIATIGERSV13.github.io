@@ -86,5 +86,13 @@ export const skillLogos = {
   'MariaDB': {
     logo: 'https://mariadb.org/wp-content/themes/twentynineteen-child/icons/mariadb_org_rgb_h.svg',
     url: 'https://mariadb.org/'
+  },
+  'CSS': {
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+    url: 'https://developer.mozilla.org/en-US/docs/Web/CSS'
+  },
+  'Google Cloud': {
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg',
+    url: 'https://cloud.google.com/'
   }
 };

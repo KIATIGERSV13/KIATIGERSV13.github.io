@@ -8,10 +8,10 @@ function SkillSection({ skillLogos }) {
   const skillGroups = {
     '운영체제': ['Rocky Linux', 'Ubuntu', 'Windows Server', 'Shell Script'],
     '컨테이너 및 오케스트레이션': ['Docker', 'Kubernetes'],
-    '클라우드': ['AWS'],
+    '클라우드': ['AWS', 'Google Cloud'],  // Google Cloud 추가
     '네트워크': ['Cisco'],
     '개발도구': ['Github', 'Git'],
-    '프론트엔드': ['HTML', 'react'],
+    '프론트엔드': ['HTML', 'CSS', 'react'],  // CSS 추가
     '데이터베이스': ['MySQL', 'MariaDB'],
     '가상화': ['VMware', 'VirtualBox'],
     '임베디드': ['Arduino', 'Raspberry Pi'],
@@ -25,6 +25,7 @@ function SkillSection({ skillLogos }) {
     'Docker': 5,
     'Kubernetes': 5,
     'AWS': 5,
+    'Google Cloud': 3,  // Google Cloud 중요도 추가
     'Cisco': 4,
     'Github': 3,
     'Git': 4,
@@ -35,6 +36,7 @@ function SkillSection({ skillLogos }) {
     'react': 3,
     'Raspberry Pi': 3,
     'HTML': 4,
+    'CSS': 4,  // CSS 중요도 추가
     'Shell Script': 4,
     'MariaDB': 3,
   };
